@@ -8,7 +8,7 @@ const chalk = require("chalk");
 console.log('process.argv', process.argv);
 console.log('process.cwd', process.cwd());
 
-program.version(require("./package").version);
+program.version(require("../package").version);
 program.command('init').description('创建项目').action(() => {
     inquirer
         .prompt([
